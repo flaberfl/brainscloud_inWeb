@@ -1172,7 +1172,7 @@ body {
 }
 
 .header {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .header__inner {
@@ -1198,13 +1198,15 @@ body {
 }
 
 .nav {
+    margin-left: 3.5rem;
     display: flex;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 18px;
 }
 
 .nav__link {
-    padding: .3rem 1.5rem;
+    padding: .5rem 1.5rem;
     margin-right: 1rem;
     color: #121212;
     text-decoration: none;
@@ -1229,7 +1231,7 @@ body {
 }
 
 .lang__item {
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
     text-decoration: none;
     color: #121212;
 }
@@ -1248,7 +1250,129 @@ body {
 
 .intro__text {
     font-size: 1.2rem;
-    color: #fafafa;
+    color: #a1a1a1;
+}
+
+.intro__title {
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #121212;
+}
+
+.intro__subtitle {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    color: #121212;
+    font-weight: 400;
+}
+
+.intro__subtitle-pink {
+    color: #ec3985;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem 2rem;
+    background: none;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #121212;
+    text-decoration: none;
+}
+
+.btn--pink {
+    border: 2px solid #ec3985;
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn--pink:hover {
+    background-color: #ec3985;
+    color: #fff;
+}
+
+.contacts {
+    margin: .8rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.contacts__item::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: #121212;
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+}
+
+.contacts__item:last-child::after {
+    display: none;
+}
+
+.contacts__link {
+    color: #121212;
+    text-decoration: none;
+}
+
+.contacts__link:hover {
+    text-decoration: underline;
+}
+
+.author {
+    position: absolute;
+    right: 8rem;
+    bottom: 0;
+    z-index: 2;
+}
+
+.circle {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(to bottom, #f5576c, #f093fb);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 50% 50% 62% 38% / 60% 44% 56% 40%;
+    -webkit-animation: circleRadius 5s alternate infinite;
+    animation: circleRadius 5s alternate infinite;
+    position: absolute;
+    right: 2rem;
+    bottom: 7rem;
+    z-index: 1;
+}
+
+@-webkit-keyframes circleRadius {
+    0% {
+        border-radius: 50% 50% 62% 38% / 60% 44% 56% 40%;
+    }
+
+    100% {
+        border-radius: 35% 65% 21% 79% / 44% 39% 61% 56%;
+    }
+}
+
+@keyframes circleRadius {
+    0% {
+        border-radius: 50% 50% 62% 38% / 60% 44% 56% 40%;
+    }
+
+    100% {
+        border-radius: 35% 65% 21% 79% / 44% 39% 61% 56%;
+    }
 }
 
 .footer {
