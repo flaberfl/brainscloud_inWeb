@@ -1357,21 +1357,35 @@ body {
 
 @-webkit-keyframes circleRadius {
     0% {
-        border-radius: 50% 50% 62% 38% / 60% 44% 56% 40%;
+        border-radius: 60% 40% 49% 51% / 58% 45% 55% 42%;
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        border-radius: 64% 36% 61% 39% / 79% 65% 35% 21%;
+        transform: translate3d(-100px, -80px, 0);
     }
 
     100% {
-        border-radius: 35% 65% 21% 79% / 44% 39% 61% 56%;
+        border-radius: 27% 73% 36% 64% / 51% 63% 37% 49%;
+        transform: translate3d(0, -100px, 0);
     }
 }
 
 @keyframes circleRadius {
     0% {
-        border-radius: 50% 50% 62% 38% / 60% 44% 56% 40%;
+        border-radius: 60% 40% 49% 51% / 58% 45% 55% 42%;
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        border-radius: 64% 36% 61% 39% / 79% 65% 35% 21%;
+        transform: translate3d(-100px, -80px, 0);
     }
 
     100% {
-        border-radius: 35% 65% 21% 79% / 44% 39% 61% 56%;
+        border-radius: 27% 73% 36% 64% / 51% 63% 37% 49%;
+        transform: translate3d(0, -100px, 0);
     }
 }
 
