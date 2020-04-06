@@ -1,3 +1,4 @@
+/*  Bootstrap Modal  */
 html {
     font-size: 15px;
 }
@@ -1307,7 +1308,7 @@ body {
     z-index: 1040;
     width: 100vw;
     height: 100vh;
-    background-color: #121212;
+    background-color: #0a1630;
 }
 
 .modal-backdrop.fade {
@@ -1315,7 +1316,7 @@ body {
 }
 
 .modal-backdrop.show {
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 .modal-header {
@@ -1668,6 +1669,35 @@ body {
 .social__icon--ins {
     width: 24px;
     height: 24px;
+}
+
+.modal-content {
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.modal__close {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: -2.2rem;
+    top: -2.2rem;
+    z-index: 1;
+}
+
+.modal__close-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: #fff;
 }
 
 .footer {
