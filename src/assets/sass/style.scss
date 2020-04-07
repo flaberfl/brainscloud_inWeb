@@ -7,6 +7,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: $black;
   font-size: 1rem;
+  background-color: $gray;
 }
 
 *,
@@ -47,9 +48,11 @@ body {
 @import "blocks/form";
 @import "blocks/input";
 @import "blocks/services";
+@import "blocks/portfolio";
 @import "blocks/footer";
 
-
+/* Vendor Libs */
+@import "vendor/slick";
 
 
 
