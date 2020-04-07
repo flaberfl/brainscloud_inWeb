@@ -3891,25 +3891,25 @@ $(function(){
     var portfolio = $("#portfolio");
     
     portfolio.slick({
-        arrows: false,
-        dots: true,
-        speed: 800,
-        slidesToShow: 2,
-        slidesToScroll: 2
+      arrows: false,
+      dots: true,
+      speed: 800,
+      slidesToShow: 2,
+      slidesToScroll: 2
     });
     
     
     
     $("#portfolio-arrow-next").on("click", function (event) {
-        event.preventDefault();
+      event.preventDefault();
     
-        portfolio.slick('slickNext');
+      portfolio.slick('slickNext');
     });
     
     $("#portfolio-arrow-prev").on("click", function (event) {
-        event.preventDefault();
+      event.preventDefault();
     
     
-        portfolio.slick('slickPrev');
+      portfolio.slick('slickPrev');
     });
 })
